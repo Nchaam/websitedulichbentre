@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Du Lịch Sinh Thái Bến Tre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo1.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Du Lịch Bến Tre" height="65">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lichkhoihanh.html">Lịch khởi hành</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tourdulichbentre.html">Tours Bến Tre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="thanhtoan.html">Thanh Toán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bando.html">Bản đồ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="page-banner">
+        <img src="img/tour-1.jpg" alt="Du lịch sinh thái Bến Tre" class="w-100">
+        <div class="banner-overlay">
+            <div class="container">
+                <h1>Du Lịch Sinh Thái Bến Tre</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Tour du lịch sinh thái</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Điểm Du Lịch Section -->
+    <section class="eco-tourism py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-primary text-uppercase">Khám Phá</h6>
+                <h2 class="mb-4">Điểm Du Lịch Sinh Thái Nổi Bật</h2>
+            </div>
+
+            <div class="row">
+                <!-- Vườn Trái Cây -->
+                <div class="col-lg-6 mb-4" data-aos="fade-up">
+                    <div class="eco-spot">
+                        <div class="eco-img">
+                            <img src="img/tour-2.jpg" alt="Vườn trái cây" class="img-fluid">
+                        </div>
+                        <div class="eco-content">
+                            <h3>Vườn Trái Cây Cái Mơn</h3>
+                            <p>Khám phá vườn cây ăn trái nổi tiếng với nhiều loại trái cây đặc sản như sầu riêng, chôm
+                                chôm, măng cụt. Trải nghiệm không gian xanh mát và thưởng thức trái cây tươi ngon tại
+                                vườn.</p>
+                            <div class="tour-info d-flex justify-content-between">
+                                <p><i class="bi bi-clock"></i> 1 Ngày</p>
+                                <p><i class="bi bi-people"></i> 20 Người</p>
+                            </div>
+                            <div class="tour-price">
+                                <span class="old-price">1,200,000đ</span>
+                                <span class="new-price">890,000đ</span>
+                            </div>
+                            <div class="eco-features">
+                                <span><i class="bi bi-tree"></i> Không gian xanh</span>
+                                <span><i class="bi bi-flower1"></i> Vườn sinh thái</span>
+                            </div>
+                            <button class="btn-book"
+                                onclick="openBookingModal('tour1', 'Tour Làng Dừa Bến Tre', 'img/img-2.jpg', '890,000đ', '1 Ngày', '20 Người')">
+                                Đặt Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Làng Chài Ven Sông -->
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="eco-spot">
+                        <div class="eco-img">
+                            <img src="img/tour-3.jpg" alt="Làng chài" class="img-fluid">
+                        </div>
+                        <div class="eco-content">
+                            <h3>Làng Chài Ven Sông</h3>
+                            <p>Trải nghiệm cuộc sống của ngư dân địa phương, tham gia đánh bắt cá truyền thống và thưởng
+                                thức hải sản tươi ngon. Khám phá nét văn hóa độc đáo của người dân miền sông nước.</p>
+                            <div class="tour-info d-flex justify-content-between">
+                                <p><i class="bi bi-clock"></i> 2 Ngày</p>
+                                <p><i class="bi bi-people"></i> 15 Người</p>
+                            </div>
+                            <div class="tour-price">
+                                <span class="old-price">2,500,000đ</span>
+                                <span class="new-price">1,890,000đ</span>
+                            </div>
+                            <div class="eco-features">
+                                <span><i class="bi bi-water"></i> Ven sông</span>
+                                <span><i class="bi bi-people"></i> Văn hóa địa phương</span>
+                            </div>
+                            <button class="btn-book"
+                                onclick="openBookingModal('tour2', 'Khám Phá Cồn Phụng', 'img/img-3.jpg', '1,890,000đ', '2 Ngày', '15 Người')">
+                                Đặt Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Khu Du Lịch Sinh Thái -->
+                <div class="col-lg-6 mb-4" data-aos="fade-up">
+                    <div class="eco-spot">
+                        <div class="eco-img">
+                            <img src="img/tour-4.jpg" alt="Khu sinh thái" class="img-fluid">
+                        </div>
+                        <div class="eco-content">
+                            <h3>Khu Du Lịch Sinh Thái Xẻo Nhum</h3>
+                            <p>Khám phá hệ sinh thái rừng dừa nước độc đáo, tham gia các hoạt động chèo xuồng ba lá, câu
+                                cá. Trải nghiệm không gian yên bình giữa thiên nhiên.</p>
+                            <div class="tour-info d-flex justify-content-between">
+                                <p><i class="bi bi-clock"></i> 1 Ngày</p>
+                                <p><i class="bi bi-people"></i> 20 Người</p>
+                            </div>
+                            <div class="tour-price">
+                                <span class="old-price">1,500,000đ</span>
+                                <span class="new-price">1,290,000đ</span>
+                            </div>
+                            <div class="eco-features">
+                                <span><i class="bi bi-tree"></i> Rừng dừa nước</span>
+                                <span><i class="bi bi-heart"></i> Không gian yên bình</span>
+                            </div>
+                            <button class="btn-book"
+                                onclick="openBookingModal('tour3', 'Khám Phá Khu Sinh Thái Xẻo Nhum', 'img/tour-4.jpg', '1,290,000đ', '1 Ngày', '20 Người')">
+                                Đặt Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cồn Phụng -->
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="eco-spot">
+                        <div class="eco-img">
+                            <img src="img/tour-5.jpg" alt="Cồn Phụng" class="img-fluid">
+                        </div>
+                        <div class="eco-content">
+                            <h3>Cồn Phụng Xanh Mát</h3>
+                            <p>Khám phá hòn đảo xanh mát giữa sông Tiền, tham quan vườn cây ăn trái, thưởng thức đặc sản
+                                địa phương và tìm hiểu về văn hóa tín ngưỡng độc đáo.</p>
+                            <div class="tour-info d-flex justify-content-between">
+                                <p><i class="bi bi-clock"></i> 1 Ngày</p>
+                                <p><i class="bi bi-people"></i> 15 Người</p>
+                            </div>
+                            <div class="tour-price">
+                                <span class="old-price">2,200,000đ</span>
+                                <span class="new-price">1,890,000đ</span>
+                            </div>
+                            <div class="eco-features">
+                                <span><i class="bi bi-geo-alt"></i> Đảo sinh thái</span>
+                                <span><i class="bi bi-cup-hot"></i> Ẩm thực đặc sắc</span>
+                            </div>
+                            <button class="btn-book"
+                                onclick="openBookingModal('tour4', 'Khám Phá Cồn Phụng', 'img/tour-5.jpg', '1,890,000đ', '1 Ngày', '15 Người')">
+                                Đặt Tour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hoạt Động Trải Nghiệm Section -->
+    <section class="activities py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-primary text-uppercase">Trải Nghiệm</h6>
+                <h2 class="mb-4">Hoạt Động Thú Vị</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="activity-card">
+                        <img src="img/tour-6.jpg" alt="Chèo xuồng" class="img-fluid">
+                        <div class="activity-content">
+                            <h4>Chèo Xuồng Ba Lá</h4>
+                            <p>Trải nghiệm cảm giác thú vị khi chèo xuồng ba lá len lỏi qua những con rạch nhỏ, khám phá
+                                vẻ đẹp hoang sơ của miền sông nước.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="activity-card">
+                        <img src="img/tour-1.jpg" alt="Hái trái cây" class="img-fluid">
+                        <div class="activity-content">
+                            <h4>Hái Trái Cây Tại Vườn</h4>
+                            <p>Tự tay hái và thưởng thức những trái cây tươi ngon ngay tại vườn, tìm hiểu về quy trình
+                                trồng và chăm sóc cây ăn trái.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="activity-card">
+                        <img src="img/tour-2.jpg" alt="Câu cá" class="img-fluid">
+                        <div class="activity-content">
+                            <h4>Câu Cá Giải Trí</h4>
+                            <p>Thư giãn với hoạt động câu cá giải trí tại các ao, đầm trong khu du lịch sinh thái,
+                                thưởng thức cá tươi ngon do chính tay mình câu được.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo và Giới thiệu -->
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                        <div class="footer-about">
+                            <img src="img/logo.png" alt="Logo" class="footer-logo mb-3">
+                            <p class="text-white-50">Khám phá vẻ đẹp miền Tây cùng Du Lịch Bến Tre. Chúng tôi cam kết
+                                mang đến những trải nghiệm du lịch độc đáo và đáng nhớ nhất.</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-youtube"></i></a>
+                                <a href="#"><i class="bi bi-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Links Hữu ích -->
+                    <div class="col-lg-2 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <h5 class="footer-title">Liên Kết</h5>
+                        <ul class="footer-links">
+                            <li><a href="#gioi-thieu">Về chúng tôi</a></li>
+                            <li><a href="#tour-noi-bat">Tour du lịch</a></li>
+                            <li><a href="#diem-den">Điểm đến</a></li>
+                            <li><a href="#dich-vu">Dịch vụ</a></li>
+                            <li><a href="#lien-he">Liên hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Tour Nổi bật -->
+                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <h5 class="footer-title">Tour Nổi Bật</h5>
+                        <div class="footer-tours">
+                            <div class="footer-tour-item">
+                                <img src="img/img-2.jpg" alt="Tour">
+                                <div class="tour-info">
+                                    <h6>Tour Làng Dừa</h6>
+                                    <span>890,000đ</span>
+                                </div>
+                            </div>
+                            <div class="footer-tour-item">
+                                <img src="img/img-3.jpg" alt="Tour">
+                                <div class="tour-info">
+                                    <h6>Cồn Phụng</h6>
+                                    <span>1,890,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin liên hệ -->
+                    <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <h5 class="footer-title">Liên Hệ</h5>
+                        <div class="footer-contact">
+                            <p><i class="bi bi-geo-alt-fill"></i> 123 Đường 30/4, TP. Bến Tre</p>
+                            <p><i class="bi bi-telephone-fill"></i> 0123.456.789</p>
+                            <p><i class="bi bi-envelope-fill"></i> info@dulichbentre.com</p>
+                            <p><i class="bi bi-clock-fill"></i> 8:00 - 17:00, Thứ 2 - CN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-md-0 text-center text-md-start">© 2024 Du Lịch Bến Tre. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-payment text-center text-md-end">
+                            <img src="img/pay2.png" alt="Payment Methods">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Đặt Tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="modalTourImage" src="" alt="" class="img-fluid rounded mb-3">
+                            <div class="tour-info mb-3">
+                                <h5 id="modalTourName" class="mb-3"></h5>
+                                <div class="tour-meta mb-3">
+                                    <p class="text-muted mb-2">
+                                        <i class="bi bi-clock"></i> <span id="modalTourDuration"></span>
+                                    </p>
+                                    <p class="text-muted mb-2">
+                                        <i class="bi bi-people"></i> Tối đa <span id="modalTourMaxPeople"></span> người
+                                    </p>
+                                    <p class="text-muted mb-2">
+                                        <i class="bi bi-geo-alt"></i> <span id="modalTourLocation">Bến Tre</span>
+                                    </p>
+                                </div>
+                                <div class="tour-price mb-3">
+                                    <p class="mb-1">Giá tour:</p>
+                                    <h4 class="text-primary" id="modalTourPrice"></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="booking-form">
+                                <h6 class="mb-3">Thông tin đặt tour</h6>
+                                <div class="mb-3">
+                                    <label for="tourDate" class="form-label">Ngày khởi hành</label>
+                                    <input type="date" class="form-control" id="tourDate" required>
+                                    <small class="text-muted">Vui lòng chọn ngày khởi hành</small>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tourQuantity" class="form-label">Số lượng người</label>
+                                    <input type="number" class="form-control" id="tourQuantity" min="1" value="1">
+                                    <small class="text-muted">Tối đa <span id="modalMaxPeopleNote"></span> người</small>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Tổng tiền dự kiến:</label>
+                                    <h5 class="text-primary" id="modalTotalPrice"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary" id="addToCartBtn">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        AOS.init();
+
+        function openBookingModal(tourId, tourName, tourImage, tourPrice, tourDuration, maxPeople) {
+            // Cập nhật thông tin cơ bản
+            document.getElementById('modalTourName').textContent = tourName;
+            document.getElementById('modalTourDuration').textContent = tourDuration;
+            document.getElementById('modalTourMaxPeople').textContent = maxPeople;
+            document.getElementById('modalMaxPeopleNote').textContent = maxPeople;
+            document.getElementById('modalTourPrice').textContent = tourPrice;
+            document.getElementById('modalTourImage').src = tourImage;
+            document.getElementById('modalTourImage').alt = tourName;
+
+            // Thiết lập ngày tối thiểu là ngày hiện tại
+            const today = new Date().toISOString().split('T')[0];
+            const tourDateInput = document.getElementById('tourDate');
+            tourDateInput.min = today;
+            tourDateInput.value = today;
+
+            // Cập nhật tổng tiền khi số lượng thay đổi
+            const quantityInput = document.getElementById('tourQuantity');
+            const updateTotalPrice = () => {
+                const quantity = parseInt(quantityInput.value);
+                const price = parseInt(tourPrice.replace(/\D/g, ''));
+                const total = quantity * price;
+                document.getElementById('modalTotalPrice').textContent =
+                    total.toLocaleString('vi-VN') + 'đ';
+            };
+
+            // Thêm giới hạn số lượng người
+            quantityInput.max = maxPeople;
+            quantityInput.addEventListener('input', function () {
+                if (parseInt(this.value) > parseInt(maxPeople)) {
+                    this.value = maxPeople;
+                }
+                updateTotalPrice();
+            });
+
+            updateTotalPrice(); // Cập nhật giá ban đầu
+
+            // Cập nhật nút thêm vào giỏ hàng
+            const addToCartBtn = document.getElementById('addToCartBtn');
+            addToCartBtn.onclick = () => {
+                const selectedDate = document.getElementById('tourDate').value;
+                if (!selectedDate) {
+                    alert('Vui lòng chọn ngày khởi hành!');
+                    return;
+                }
+                addToCart(tourId, tourName, tourImage, tourPrice, tourDuration, maxPeople, selectedDate);
+            };
+
+            // Hiển thị modal
+            const modal = new bootstrap.Modal(document.getElementById('bookingModal'));
+            modal.show();
+        }
+    </script>
+</body>
+
+</html>
